@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reminder app</title>
+  </head>
+  <body>
+    <h1>Reminders</h1>
+    <label for="title">Title</label>
+    <input type="text" id="title" placeholder="Title" />
+    <br />
+    <br />
+    <label for="priority">Priority</label>
+    <input type="text" id="priority" placeholder="Priority" />
+    <br />
+    <br />
+    <label for="color">Color</label>
+    <input type="text" id="color" placeholder="Color" />
+    <br />
+    <br />
+    <label for="description">Description</label>
+    <textarea
+      name="description"
+      id="description"
+      placeholder="Write description"
+    ></textarea>
+    <br />
+    <br />
+    <button id="reminderBtn">Add reminder</button>
+    <button id="allRemindersBtn">Show all reminders</button>
+    <br /><br />
+    <div id="table" style="display: none; font-size: large; font-style: bold">
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Priority</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody" style="background-color: cornflowerblue"></tbody>
+      </table>
+    </div>
+    <script src="./sctipt.js"></script>
+  </body>
+</html>
