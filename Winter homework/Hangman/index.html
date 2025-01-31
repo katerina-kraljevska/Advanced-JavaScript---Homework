@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+    <link rel="stylesheet" href="./style.css" text="text/css" />
+  </head>
+  <body>
+    <h1 id="title">Hangman</h1>
+    <div id="new-game" style="display: grid">
+      <p id="all-categories">
+        <button id="tv-shows">TV shows</button>
+        <button id="films">Films</button>
+        <button id="books">Books</button>
+      </p>
+      <button id="play">Play</button>
+    </div>
+    <div id="game" style="display: none">
+      <p>Use the alphabet to guess the word or click hint to get a clue</p>
+      <div class="alphabet">
+        <div id="buttons">
+          <ul id="listOfLetters"></ul>
+        </div>
+      </div>
+      <div id="word-spaces"></div>
+      <p id="category">Category:</p>
+      <p id="lives">Lives:</p>
+      <p id="clue">Hint:</p>
+      <div id="image">
+        <img src="./images/10.png" alt="default-photo" />
+      </div>
+      <br /><br />
+      <div id="container">
+        <button id="hint">Hint</button>
+        <button id="reset">Play again</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
